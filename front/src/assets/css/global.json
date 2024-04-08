@@ -1,0 +1,10 @@
+{
+  "@brendColor": "#246e75",
+  "@brendColorLight": "#3cb8c3",
+  "@brendColorDark": "#12373b",
+  "@brendColorGray": "#677B7D",
+  "@white": "#fff",
+  "@black": "#000",
+  "@warningColor": "#e69720",
+  "@normalRadius": "1.5rem"
+}

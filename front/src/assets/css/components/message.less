@@ -1,0 +1,115 @@
+.message{
+}
+
+@messageRadius: 0.3rem;
+@LightBgColor: #fff;
+
+@sendColor: @brendColor;
+@receiveColor: #A6DFE4;
+
+@msgPointerwidth: 0.8rem;
+@msgPointerwidthHalf: 0.4rem;
+@boxRadius: 1rem;
+
+.showMessage{
+  .messageTitle{
+    position: fixed;
+    background-color: #fff;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    padding: 1rem;
+  }
+  .messageInputWrap{
+    position: fixed;
+    background-color: #fff;
+    z-index: 5;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+  }
+  .msgWrap{
+    // margin-bottom: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 13rem;
+    
+    .text{
+      min-height: 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .send{
+      margin: 1rem 0 1rem 2rem ;
+      .textWrap{
+        background-color: @sendColor;
+    
+        background-origin: border-box;
+        color: #fff;
+        background-clip: content-box, border-box;
+        // border-radius: @messageRadius;
+        
+        border-radius: 2rem;
+        border-bottom-right-radius: 0.3rem;
+        position: relative;
+        margin-right: 1rem;
+
+        .text{
+          padding: 1rem;
+        }
+        
+      }
+      .datetime{
+        text-align: right;
+        margin-right: 1rem;
+      }
+    }
+
+    .receive{
+      margin: 1rem 2rem 1rem 0 ;
+      .textWrap{
+
+        
+        // background-image: linear-gradient(@LightBgColor, @LightBgColor), 
+        // linear-gradient(to left, @brendColorLight 0%, @brendColor 100%);
+        background-color: @receiveColor;
+    
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        // border-radius: @messageRadius;
+        border-radius: 2rem;
+        border-bottom-left-radius: 0.3rem;
+        position: relative;
+        margin-left: 1rem;
+       
+        .text{
+          padding: 1rem;
+        }
+      }
+      .datetime{
+        text-align: left;
+        margin-left: 1rem;
+      }
+    }
+
+  
+  }
+
+
+  .messageInputWrap{
+    // box-shadow: 5px -5px 5px rgba(18, 55, 59, 0.15);
+  }
+}
+
+
+.sendMessage{
+  .wrap{
+    
+  }
+}
+
+.newMessageSendBtn{
+  position: fixed;
+  right: 1rem;
+  bottom: 8rem;
+}
